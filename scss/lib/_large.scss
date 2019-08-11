@@ -1,0 +1,102 @@
+@media screen and (min-width: 980px) {
+    body {
+        padding: 0%;
+    }
+
+    header {
+        padding: 0 10rem;
+    }
+
+    nav {
+        display: block;
+        margin: 0 8rem;
+        border-top: 1px solid $grey-color;
+        border-bottom: 1px solid $grey-color;
+        margin-bottom: 20px;
+
+        ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+            li{
+                display: block;
+                list-style-type: none;
+                justify-self: center;
+                a{
+                    text-decoration: none;
+                    color: $grey-color;
+
+                    &:hover {
+                        color: $dark-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .social {
+        justify-self: end;
+        align-self: center;
+    }
+
+    .search 
+    {
+        justify-self: start;
+        align-self: center;
+    }
+
+    .container {
+        padding: 0 8rem;
+        margin: auto; 
+    }
+
+    .posts {
+        display: grid;
+        padding: 0 8rem;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    .slide {
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 2rem;
+
+        .showcase-img{
+            grid-column-start: 1;
+            grid-column-end: span 3;
+        }
+
+        .content {
+            grid-column-start: 4;
+            grid-column-end: span 5;
+            align-self: start;
+
+            .arrows {
+                margin: 0 0 3rem;
+            }
+
+            .post-title {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+
+    main {
+        display: grid;
+        padding: 0 8rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: 20px;
+        grid-template-rows: auto;
+    
+        article {
+            grid-column: span 9;
+        }
+
+        aside {
+            grid-column: 10 / 13;
+        }
+    }
+}

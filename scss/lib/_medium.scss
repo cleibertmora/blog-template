@@ -1,0 +1,14 @@
+@media screen and (min-width: 700px) {
+    .share {
+        display: block;
+        position: fixed;
+        top: 30%;
+    
+        ul {
+            li {
+                display: block;
+                list-style-type: none;
+            }
+        }
+    }
+}

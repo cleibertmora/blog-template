@@ -1,0 +1,50 @@
+main {
+
+    article {
+        width: 100%;
+        background: $light-color;
+        box-shadow: $shadow;
+        border-radius: 10px;
+        margin: 0 0 20px;
+
+        .cover_post{
+            width: 100%;
+            justify-self: center;
+        }
+
+        .content {
+            padding: 5%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .posts {
+            padding: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            
+            .card{
+                box-shadow: none;
+            }
+        }
+    }
+
+    aside {
+        width: 100%;
+        
+        img {
+            max-width: 100%;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 20px;
+        }
+    }
+
+}
+
+.share {
+    display: none;
+}
